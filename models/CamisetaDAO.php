@@ -46,7 +46,7 @@ class CamisetaDAO
         $nombre = $producto->getNombre();
         $talla = $producto->getTalla();
         $precio = $producto->getPrecio();
-
+//pone parametros
         $stmt->bind_param("ssd", $nombre, $talla, $precio);
         $stmt->execute();
 
